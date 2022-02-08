@@ -9,11 +9,13 @@ import { PagesRoutingModule } from './pages.routing';
 import { PagesComponent } from './pages.component';
 import { HomeComponent } from './home/home.component';
 import { CatalogComponent } from './catalog/catalog.component';
+import { ShopSingleComponent } from './shop-single/shop-single.component';
 
 const COMPONENTS = [
   PagesComponent,
   HomeComponent,
   CatalogComponent,
+  ShopSingleComponent,
 ]
 
 @NgModule({

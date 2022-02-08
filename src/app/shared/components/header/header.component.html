@@ -5,8 +5,9 @@
     <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
     <div class="navbar navbar-expand-lg navbar-light bg-light navbar-sticky" data-fixed-element>
         <div class="container px-0 px-xl-3">
-            <a href="index.html" class="navbar-brand order-lg-1 me-0 pe-lg-3 me-lg-4">
-                <img src="../assets/img/ecommerce/logo.svg" alt="Createx Logo" width="130">
+            <a class="navbar-brand order-lg-1 me-0 pe-lg-3 me-lg-4 click" (click)="home()">
+                <img src="../../../../assets/img/ecommerce/logo.svg" alt="Createx Logo" width="130">
+                
             </a>
 
             <!-- Search desktop -->
@@ -60,13 +61,13 @@
                 <!-- Menu -->
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
+                        <a class="nav-link click" (click)="home()">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Shop</a>
                         <ul class="dropdown-menu">
-                            <li><a href="shop-catalog.html" class="dropdown-item">Catalog with Filters</a></li>
-                            <li><a href="shop-single.html" class="dropdown-item">Single Product</a></li>
+                            <li><a class="dropdown-item click" (click)="shopCatalog()">Catalog with Filters</a></li>
+                            <li><a class="dropdown-item click" (click)="shopSingle()">Single Product</a></li>
                             <li><a href="checkout.html" class="dropdown-item">Checkout</a></li>
                         </ul>
                     </li>
@@ -134,7 +135,7 @@
                                     </div>
                                     <div class="col-lg-3 d-none d-lg-block py-2">
                                         <a href="#" class="d-block text-decoration-none pt-1">
-                                            <img src="../assets/img/ecommerce/megamenu.jpg" class="d-block rounded mb-3"
+                                            <img src="../../../../assets/img/ecommerce/megamenu.jpg" class="d-block rounded mb-3"
                                                 alt="Promo banner">
                                             <h5 class="fs-sm mb-3">Back to school. Sale up to 50%</h5>
                                             <div class="btn btn-outline-primary btn-sm">
@@ -193,7 +194,7 @@
         <!-- Item -->
         <div class="d-flex align-items-start p-4 border-bottom mx-n4">
             <a href="shop-single.html" style="min-width: 80px;">
-                <img src="../assets/img/ecommerce/cart/01.png" width="80" alt="Product thumb">
+                <img src="../../../../assets/img/ecommerce/cart/01.png" width="80" alt="Product thumb">
             </a>
             <div class="w-100 ps-3">
                 <div class="d-flex justify-content-between">
@@ -226,7 +227,7 @@
         <!-- Item -->
         <div class="d-flex align-items-start p-4 border-bottom mx-n4">
             <a href="shop-single.html" style="min-width: 80px;">
-                <img src="../assets/img/ecommerce/cart/02.png" width="80" alt="Product thumb">
+                <img src="../../../../assets/img/ecommerce/cart/02.png" width="80" alt="Product thumb">
             </a>
             <div class="w-100 ps-3">
                 <div class="d-flex justify-content-between">
@@ -254,7 +255,7 @@
         <!-- Item -->
         <div class="d-flex align-items-start p-4 border-bottom mx-n4">
             <a href="shop-single.html" style="min-width: 80px;">
-                <img src="../assets/img/ecommerce/cart/03.png" width="80" alt="Product thumb">
+                <img src="../../../../assets/img/ecommerce/cart/03.png" width="80" alt="Product thumb">
             </a>
             <div class="w-100 ps-3">
                 <div class="d-flex justify-content-between">
@@ -285,7 +286,7 @@
         <!-- Item -->
         <div class="d-flex align-items-start p-4 mx-n4">
             <a href="shop-single.html" style="min-width: 80px;">
-                <img src="../assets/img/ecommerce/cart/04.png" width="80" alt="Product thumb">
+                <img src="../../../../assets/img/ecommerce/cart/04.png" width="80" alt="Product thumb">
             </a>
             <div class="w-100 ps-3">
                 <div class="d-flex justify-content-between">

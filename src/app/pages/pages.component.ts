@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-pages',
@@ -7,11 +8,28 @@ import { Component, OnInit } from '@angular/core';
 
 export class PagesComponent implements OnInit {
 
-    title = 'ProjectTG';
-    sideBarOpen = true;
+    estado: string = 'active'
 
-    constructor() { }
+    constructor(
+        private _router: Router
+    ) {
+        this.preloader()
+    }
 
     ngOnInit() { }
 
+    preloader() {
+
+        this._router.events.subscribe(
+            events => {
+
+                this.estado = 'active'
+
+                setTimeout(() => {
+                    this.estado = ''
+                }, 2000)
+
+            });
+
+    }
 }
